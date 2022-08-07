@@ -1,0 +1,40 @@
+from cgitb import strong
+import random
+from re import X 
+import random
+class Hero():
+    def var():
+        global health , mana , stamina , strong , intelect , luck , charisma , level
+        health = 100
+        level = 1
+        mana = 100
+        stamina = 100
+        strong = 1
+        intelect = 1 
+        luck = 1
+        charisma = 1 
+    def Levelcheck(y,a,x,):
+        MaxXPRanditStart = level + 1
+        MaxXPRanditEnd = 10 + level
+        xp = 0
+        if xp == maxxp:
+            level =+ 1
+            xp == 0
+            maxxp =+ random.randint(MaxXPRanditStart , MaxXPRanditEnd)
+    #def hp_add(x , ):
+    #    health = a
+    #   x + a = health
+    #def damage(x):
+    #    x - a = health
+    def heropanel():
+        Hero.var()
+        print ("Ваш уровень: " + str(level))
+        print ("Ваш уровень мана: " + str(mana))
+        print ("Здоровье: " + str(health) + "/" )
+        print ("Ваша усталость: " + str(stamina))
+        print ("Ваш Интелект: " + str(intelect))
+        print ("Ваша сила: "+ str(strong))
+        print ("Ваша удача: " + str(luck))
+        print ("Ваша харизма: " + str(charisma))
+
+Hero.heropanel()
