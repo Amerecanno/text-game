@@ -1,0 +1,7 @@
+
+
+class boy():
+    def draka(NAMEmonser, monsterHP, monsterATACC):
+        print("началась драка с " + str(NAMEmonser))
+        print("что будем делать у монстра примерно " + str(monsterHP) + " здоровья")
+boy.draka( Lox , 10 , 10)
