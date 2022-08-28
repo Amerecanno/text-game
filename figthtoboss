@@ -1,7 +1,11 @@
 
+import string
+
+
 
 class boy():
     def draka(NAMEmonser, monsterHP, monsterATACC):
-        print("началась драка с " + str(NAMEmonser))
-        print("что будем делать у монстра примерно " + str(monsterHP) + " здоровья")
-boy.draka( Lox , 10 , 10)
+        print("Началась драка с " + str(NAMEmonser))
+        print("что будем делать у монстра примерно " + str(monsterHP) + " здоровья и атакует он примерно " + str(monsterATACC))
+        holds = input("")
+boy.draka( 1 , 10 , 10)

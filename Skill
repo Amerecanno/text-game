@@ -6,8 +6,10 @@ class Hero():
         def var():
             global health , mana , stamina , strong , intelect , luck , charisma , level
             health = 100
+            maxhealth = health + (strong * 2) + (level * 3) 
             level = 1
             mana = 100
+            maxmana = mana + (level * 4)
             stamina = 100
             strong = 1
             intelect = 1 
@@ -29,8 +31,8 @@ class Hero():
         def heropanel():
             Hero.var()
             print ("Ваш уровень: " + str(level))
-            print ("Ваш уровень мана: " + str(mana))
-            print ("Здоровье: " + str(health) + "/" )
+            print ("Ваш уровень мана: " + str(mana) + "/" + str(maxhealth))
+            print ("Здоровье: " + str(health) + "/" + str(maxhealth) )
             print ("Ваша усталость: " + str(stamina))
             print ("Ваш Интелект: " + str(intelect))
             print ("Ваша сила: "+ str(strong))
